@@ -8,7 +8,7 @@ docker push beatrizcosta/projeto-backend:1.0
 docker push beatrizcosta/projeto-database:1.0
 
 echo "Criando services no cluster kubernetes..."
-kubctl apply -f ./services.yml
+kubectl apply -f ./services.yml
 
 echo "Criando deployments..."
-kubctl apply -f ./deployment.yml
+kubectl apply -f ./deployment.yml
